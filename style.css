@@ -1,0 +1,128 @@
+ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f7fa;
+margin: 0;
+}
+
+.container {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+font-size: 1.5em;
+color: #333;
+}
+
+.display-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.display {
+width: calc(100% - 50px);
+padding: 10px;
+font-size: 1em;
+border: 1px solid #ddd;
+border-radius: 4px;
+background-color: #eef1f6;
+outline: none;
+transition: all 0.3s ease;
+}
+
+.display[readonly] {
+cursor: not-allowed;
+}
+
+.display-container button {
+background: none;
+border: none;
+cursor: pointer;
+padding: 0;
+margin: 0;
+}
+
+.display-container button:hover img {
+opacity: 0.8;
+}
+
+.input-container p {
+margin: 5px 0;
+color: #555;
+}
+
+.input-container {
+margin-bottom: 20px;
+}
+
+.length-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.slider {
+width: 100%;
+margin: 10px 0;
+cursor: pointer;
+}
+
+.input-container div {
+margin: 10px 0;
+}
+
+.input-container label {
+margin-left: 5px;
+font-size: 0.9em;
+color: #666;
+}
+
+.strength-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.strength-container div {
+width: 100px;
+height: 10px;
+background-color: grey;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.generateButton {
+display: block;
+width: 100%;
+padding: 12px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1em;
+transition: background-color 0.3s ease;
+}
+
+.generateButton:hover {
+background-color: #0056b3;
+}
+
+.active {
+visibility: visible !important;
+color: #007bff;
+font-weight: bold;
+}
